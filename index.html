@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<style>
+    .nopadding{
+        padding: 0px;
+    }
+    .btn_font{
+        font-size: 30px;
+    }
+</style>
+
+</head>
+<body >
+    <div > 
+       <h1 class="">CALCULATOR</h1>
+    </div>
+    <div class="calculator card">
+
+        <input type="text" class="calculator-screen z-depth-1" id="Calculation" disabled value="0" />
+    
+        <div class="calculator-keys">
+    
+          <button type="button" class="operator btn btn-info" value="+" id="operator" onclick="UserClickButton('+')">+</button>
+          <button type="button" class="operator btn btn-info" value="-" id="operator" onclick="UserClickButton('-')">-</button>
+          <button type="button" class="operator btn btn-info" value="*" id="operator" onclick="UserClickButton('*')">&times;</button>
+          <button type="button" class="operator btn btn-info" value="/" id="operator" onclick="UserClickButton('/')">&divide;</button>
+    
+          <button type="button" value="7" class="btn-outline-dark " onclick="UserClickButton('7')">7</button>
+          <button type="button" value="8" class="btn-outline-dark " onclick="UserClickButton('8')">8</button>
+          <button type="button" value="9" class="btn-outline-dark " onclick="UserClickButton('9')">9</button>
+    
+    
+          <button type="button" value="4" class="btn-outline-dark " onclick="UserClickButton('4')">4</button>
+          <button type="button" value="5" class="btn-outline-dark " onclick="UserClickButton('5')">5</button>
+          <button type="button" value="6" class="btn-outline-dark " onclick="UserClickButton('6')">6</button>
+    
+    
+          <button type="button" value="1" class="btn-outline-dark " onclick="UserClickButton('1')">1</button>
+          <button type="button" value="2" class="btn-outline-dark " onclick="UserClickButton('2')">2</button>
+          <button type="button" value="3" class="btn-outline-dark " onclick="UserClickButton('3')">3</button>
+    
+    
+          <button type="button" value="0" class="btn-outline-dark " onclick="UserClickButton('0')">0</button>
+          <button type="button" class="decimal function btn btn-secondary" value="." onclick="UserClickButton('.')">.</button>
+          <button type="button" class="delete btn btn-dark btn-sm " value="del" onclick="Del()">DEL</button>
+
+          <button type="button" class="all-clear function btn btn-danger btn-sm" value="all-clear" onclick="ClearData()">AC</button>
+          
+          <button type="button" class="equal-sign operator btn btn-success" value="=" onclick=CalculateValue()>=</button>
+    
+        </div>
+      </div>
+    </div>
+<script src="javas.js"></script>
+</body>
+</html>
